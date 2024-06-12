@@ -1,0 +1,28 @@
+---
+layout: default
+title: News
+permalink: /news/
+---
+
+<div class="container">
+  <div class="content">
+
+    <h1><i class="fas fa-comment-dots"></i> News</h1>
+
+    <div class="row">
+      <div class="col-sm-8">
+        <table class="table table-condensed table-striped">
+          {% for post in site.posts %}
+          <tr>
+            <td><span>{{ post.date | date: "%b %-d, %Y" }}</span></td>
+            <td><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+
+    <p>subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>
+
+  </div>
+</div>
