@@ -5,7 +5,7 @@ keywords: hakan torun, blog, yazılım geliştirme, siber güvenlik, programlama
 description: >-
   Hakan Torun Kişisel Blog Sitesi. Bilgisayar mühendisliği, yazılım geliştirme, siber güvenlik ve çeşitli konularda blog gönderilerine erişebilirsiniz.
 lang: tr-TR
-timezone:  Europe/Istanbul
+timezone:  America/Los_Angeles
 repo: https://github.com/onepase/Ephesus # site repo [optional]
 google_verify:      21cT-ymnHlpACbgN5dPCqVZMQ22jAFAuB9eSw0TQ5KQ # Put your Google Verification here
 google_analytics:   G-5LL18ZG0X6 # Put your Google Analytics code
