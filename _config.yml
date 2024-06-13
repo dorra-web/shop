@@ -7,7 +7,7 @@ description: >-
 lang: tr-TR
 timezone:  Europe/Istanbul
 repo: https://github.com/onepase/Ephesus # site repo [optional]
-google_verify:      Q4Ewp22lX-DiRoBVzVVP13l6lh2oxChSmpGfBP0SPj8 # Put your Google Verification here
+google_verify:      21cT-ymnHlpACbgN5dPCqVZMQ22jAFAuB9eSw0TQ5KQ # Put your Google Verification here
 google_analytics:   G-5LL18ZG0X6 # Put your Google Analytics code
 discus-identifier: hakanio
 
