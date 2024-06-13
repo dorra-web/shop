@@ -406,10 +406,20 @@ nav {
 
 // Posts
 .posts > .post {
-  padding-bottom: 2em;
   border-bottom: 1px solid $divider-color;
 }
-
+.posts > .post h2 {
+    font-size: 18px;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    white-space: nowrap;
+    padding-left: 28px;
+    margin: 0;
+}.posts > .post h2 a {
+    display: block;
+}
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
