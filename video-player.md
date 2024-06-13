@@ -1,27 +1,68 @@
 ---
 layout: page
-title: Video Player and Download Free
-icon: fa-envelope
-permalink: /video-player/
+title: "About Me"
+permalink: "/video-player/"
 ---
 
-TinyMCE kullanışlı bir editör. Web uygulamalarında içeriklerin tekrar elden geçirilmesi hususunu bir nebze olsun hafifleten bir editör. Gel gelelim TinyMCE kullanılan bir alanda manipülasyon yapılması gerektiğinde farklı bir yöntem kullanılması gerektiğinden bihaber yazılımcının canını biraz sıkar.
+<div class="w-100">
+	<p>👋 I'm a computer engineer based in Turkey. I started XON Software Company in 2010 (Formerly Pardinus). Currently, I build software at <a href="https://xon.net.tr">XON</a> with my team. </p>
+	<p>Some of my main interest areas are AI, LLM, Machine Learning, Web Scraping, Operating System Design and Web Servers.</p>
+	<p style="font-weight: 500;">Publications</p>
+	<ul>
+		<li>
+			<a href="https://ieeexplore.ieee.org/document/9864677" target="_blank">
+				A Method for Similarity Detection in Vector Space by Summarizing News Articles (IEEE · 15 May 2022)
+			</a>
+		</li>
+		<li>
+			<a href="#" target="_blank">
+				Similarity Detection of Turkish News Articles With Approximate Nearest Neighbor SearchSimilarity Detection of Turkish News Articles With Approximate Nearest Neighbor Search (Kocaeli University · 13 May 2022)
+			</a>
+		</li>
+		<li>
+			<a href="https://ieeexplore.ieee.org/document/8404826" target="_blank">
+				Detecting Similar News by Summarizing Turkish NewsDetecting Similar News by Summarizing Turkish News (IEEE · 9 Tem 2018)
+			</a>
+		</li>
+	</ul>
 
-Hemen konuya geçelim;
-
-Mesela web uygulamamızın panel kısmından haber ekleme modülünde TinyMCE kullandık ve kullanıcı bu alana butonlar aracılığıyla eklemeler yapmak istedi. Örneğin kullanıcı editörü kullanırken yazı içine resim eklemek istedi. Önce yazının o anki hali tutulacak, her resim ekleme işleminde bu işlem tekrarlanacak ve iş anlamsızlaşacak. Kullanıcı her bir eklemede bir önceki veriyi kısmen kaybedecek. Bu noktada  jquery maalesef pek işe yaramıyor. Şöyle ki;
-
-&nbsp;
-
-- Şu anki içeriği önbellekle
-- Eklenen resmi içerikle birlikte bas
-  
-ile ekleme yapmaya çalıştığınızda ne yazık ki her eklemede bir önceki veriyi kaybediyoruz. Bu noktada TinyMCE imdadımıza koşuyor ve
-
-{% highlight javascript %}
-tinyMCE.execCommand(&#039;mceInsertContent&#039;, false, &#039;&lt;img witdh="100%" src="http://www.mysite.com/myImage.jpg"  /&gt;&#039;);
-{% endhighlight %}
-
-tinyMCE.execCommand vasıtası ile yazı içerisine rahatlılla ekleme yapabiliyoruz. Pek tabi resim ekleme dışında her hangi bir içerik eklemek bu yolla mümkün. Bu kullanımı TinyMCE&#8217;ye bir image uploader yazarken kullanmak zorunda kaldım. Maalesef TinyMCE image upload eklentisini ücretsiz olarak dağıtmıyor ve bu noktada kendi çözümünüzü üretmeniz ya da ücreti karşılığında almanız gerek.
-  
-Bu arada yazı başlığı biraz garip oldu galiba. Saat sabah 05:30 idare edelim  <img src="http://www.eksihayaller.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" />
+	<p style="font-weight: 500;">Links</p>
+	<ul>
+		<li>
+			<a href="https://xon.chat" target="_blank">
+				XON Chat - Live Chat Software
+			</a>
+		</li>
+		<li>
+			<a href="https://meet.xon.chat" target="_blank">
+				XON Meet - Free P2P Online Meeting
+			</a>
+		</li>
+		<li>
+			<a href="https://file.tc" target="_blank">
+				File.TC - P2P File Transfer
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/onepase/ephesus" target="_blank">
+				Ephesus · Minimalist Jekyll Theme (Github)
+			</a>
+		</li>
+		<li>
+			<a href="https://zaqa.net" target="_blank">
+				Zaqa · Anonymous Question & Answer Social Network
+			</a>
+		</li>
+		<li>
+			<a href="https://intersiber.com" target="_blank">
+				intersiber · Cyber Security and Technology News & Articles (TR)
+			</a>
+		</li>
+		<li>
+			<a href="https://dev.to/hakan" target="_blank">
+				DEV.to Profile (EN)
+			</a>
+		</li>
+	</ul>
+	<p>Follow me on twitter: <a href="https://twitter.com/onepase" target="_blank">@onepase</a>, for more information about my professional career visit my <a href="https://linkedin.com/in/hakantorun" target="_blank">Linkedin Profile</a></p>
+</div>
