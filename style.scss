@@ -13,7 +13,10 @@
 /**************/
 /* BASE RULES */
 /**************/
-
+* {
+    margin: 0;
+    padding: 0;
+}
 html {
   font-size: $base-font-size;
 }
@@ -426,7 +429,7 @@ height: 30px;
 position: absolute;
 margin: 0;
 }@media screen and (max-width: 800px) {
-    #main {overflow-y: hidden;
+    #main {
         width: auto;
         float: none;
     }
