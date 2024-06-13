@@ -28,36 +28,7 @@ layout: default
     json: '{{site.baseurl}}/search.json'
   })
   </script>
-
-    <article class="post">
-      <h2>
-        <a href="{{ site.baseurl }}/sticky/2018/04/01/how-to-participate-in-terminus.html">【置顶】如何协作参与端点星计划</a>
-      </h2>
-
-      <div class="meta">
-        <span class="date">
-          2018-04-01
-        </span>
-
-        <ul class="tag">
-
-          <li>
-            <a href="{{ site.baseurl }}/tags.html#参与">
-              参与
-            </a>
-          </li>
-
-        </ul>
-      </div>
-
-      <div class="entry">
-        Terminus 端点星计划，是在 GitHub 开放平台搭建的一个站点，以去中心化的方式备份微信、微博等平台被删文章。
-      </div>
-
-      <a href="{{ site.baseurl }}/sticky/2018/04/01/how-to-participate-in-terminus.html" class="read-more">Read More</a>
-    </article>
   {% endif%}
-
   {% for post in paginator.posts %}
     <article class="post">
       <h2>
@@ -66,21 +37,20 @@ layout: default
     </article>
   {% endfor %}
 </div>
-
 <script> pangu.spacingPage(); </script>
 
 <div class="pagination">
   {% if paginator.previous_page %}
     <span class="prev">
       <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
-        前一页
+        previous page
       </a>
     </span>
   {% endif %}
   {% if paginator.next_page %}
     <span class="next">
       <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
-        后一页
+        next page
       </a>
     </span>
   {% endif %}
