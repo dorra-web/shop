@@ -1,12 +1,10 @@
 ---
-title: 'TinyMCE Kullanılan Textarea&#8217;ya Ekleme Yapma'
-date: 2012-02-29T03:34:37+00:00
-author: Hakan
 layout: page
+title: Video Player and Download Free
+icon: fa-envelope
 permalink: /video-player/
-categories:
-  - Javascript
 ---
+
 TinyMCE kullanışlı bir editör. Web uygulamalarında içeriklerin tekrar elden geçirilmesi hususunu bir nebze olsun hafifleten bir editör. Gel gelelim TinyMCE kullanılan bir alanda manipülasyon yapılması gerektiğinde farklı bir yöntem kullanılması gerektiğinden bihaber yazılımcının canını biraz sıkar.
 
 Hemen konuya geçelim;
