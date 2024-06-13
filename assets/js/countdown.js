@@ -2,7 +2,7 @@
             event.preventDefault(); 
             var link = event.currentTarget.href;
             var countdownElement = document.getElementById('countdown');
-            var timeLeft = 15;
+            var timeLeft = 10;
 
             countdownElement.style.display = 'block';
             countdownElement.innerText = 'Please Wait in ' + timeLeft + ' second...';
