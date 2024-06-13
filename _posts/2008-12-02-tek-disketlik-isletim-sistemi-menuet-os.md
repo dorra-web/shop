@@ -15,7 +15,7 @@ Hurdaya ayrılmış bilgisayarlar üzerinde bile rahatça çalışabilen Menue
 
 Şimdi gelelim MenuetOS'u bilgisayarınızda nasıl deneyeceğinize. Bizzat denedim ve MenuetOS u eski birbilgisayarda çalıştırmayı başardım.
 
-[![Linux Shred](https://example.com/path/to/image.png)](http://www.postzo.store/tek-disketlik-isletim-sistemi-menuet-os/)
+[![Linux Shred]({{ site.baseurl }}/assets/images/post/menuetos-desktop.png)](http://www.postzo.store/tek-disketlik-isletim-sistemi-menuet-os/)
 
 MenuetOS işletim sistemleri içinde şüphesiz en basit arayüzle kullanıcılarını bekleyen ve diğer işletim sistemleri gibi karmaşık olmayan altayapısı Assembly ile oluşturulmuş bir işletim sistemi.
 
