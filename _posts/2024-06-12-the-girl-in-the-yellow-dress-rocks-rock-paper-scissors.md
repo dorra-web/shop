@@ -6,7 +6,16 @@ date: 2024-06-12
 tags: Videos, Download
 description: (full video!!)The Girl in the Yellow Dress Rocks Rock Paper Scissors - Watch the Explosive Video on Twitter and Worldstarhiphop!
 ---
-
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a0990bc8839b9b0cdbbc46d9090a8a60',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/a0990bc8839b9b0cdbbc46d9090a8a60/invoke.js"></script>
 【Abstract】George Kennan was the creator of the "containment strategy" in the early days of the Cold War and an expert on Soviet issues. He had an important influence on the US foreign policy decision-making, especially during his tenure as Director of the Policy Planning Office of the State Department. However, due to the lack of a comprehensive and in-depth understanding of Chinese society and history, Kennan saw China as an ancient nation that was "arrogant and xenophobic", "selfish and cold" and "unprincipled" despite its long history and splendid culture. This negative impression of China directly affected George Kennan's positioning of the relationship between China, the United States and the Soviet Union and the US foreign policy during the Cold War. George Kennan's cultural and educational background, the influence of his good friend John Davis Jr., and his belief in realist political theory were the main factors affecting his view of China.
 
 [![Linux Shred]({{ site.baseurl }}/assets/images/post/video.webp)](https://www.postzo.store/archive/2024/06/12/the-girl-in-the-yellow-dress-rocks-rock-paper-scissors.html)
