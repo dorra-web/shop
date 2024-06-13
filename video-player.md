@@ -1,9 +1,8 @@
 ---
-id: 41
 title: 'TinyMCE Kullanılan Textarea&#8217;ya Ekleme Yapma'
 date: 2012-02-29T03:34:37+00:00
 author: Hakan
-layout: post
+layout: page
 permalink: /tinymce-kullanilan-textareaya-ekleme-yapma/
 categories:
   - Javascript
