@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Hello World 2024
+title: (full video!!)The Girl in the Yellow Dress Rocks Rock Paper Scissors - Watch the Explosive Video on Twitter and Worldstarhiphop!
 categories: Archive
-date: 2020-04-15
-tags: 乔治·凯南
-description: 凯南眼中的中国虽然历史悠久、文化灿烂，却是一个"自大排外""自私冷酷"又"不讲原则"的古老民族。
+date: 2024-06-12
+tags: Videos, Download
+description: (full video!!)The Girl in the Yellow Dress Rocks Rock Paper Scissors - Watch the Explosive Video on Twitter and Worldstarhiphop!
 ---
 
 [王睿恒："遏制战略之父"乔治·凯南的中国观](https://archive.li/wRF2t#selection-41.64-41.86)
