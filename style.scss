@@ -425,6 +425,11 @@ width: 30px;
 height: 30px;
 position: absolute;
 margin: 0;
+}@media screen and (max-width: 800px) {
+    #main {
+        width: auto;
+        float: none;
+    }
 }
 .posts > .post:last-child {
   padding-bottom: 1em;
