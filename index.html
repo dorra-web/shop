@@ -31,9 +31,7 @@ layout: default
   {% endif%}
   {% for post in paginator.posts %}
     <article class="post">
-      <h2>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h2>
+      <div class="notes"></div><h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     </article>
   {% endfor %}
 </div>
