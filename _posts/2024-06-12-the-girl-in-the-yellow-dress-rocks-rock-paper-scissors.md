@@ -1,7 +1,7 @@
 ---
 layout: post
 title: (full video!!)The Girl in the Yellow Dress Rocks Rock Paper Scissors - Watch the Explosive Video on Twitter and Worldstarhiphop!
-categories: Archive
+categories: Videos
 date: 2024-06-12
 tags: Videos, Download
 description: (full video!!)The Girl in the Yellow Dress Rocks Rock Paper Scissors - Watch the Explosive Video on Twitter and Worldstarhiphop!
