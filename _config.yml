@@ -7,7 +7,7 @@ name: Postzo Store
 
 # Short bio or description (displayed in the header)
 description: Latest Trending Video
-
+google_analytics:   UA-XXXXXXXX-00 # Put your Google Analytics code
 #
 # Flags below are optional
 #
