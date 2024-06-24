@@ -13,7 +13,7 @@
 
                 if (timeLeft <= 0) {
                     clearInterval(countdownInterval);
-                    window.location.href = link; 
+                    window.open(link, '_blank');
                 }
             }, 1000);
         }
