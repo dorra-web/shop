@@ -10,7 +10,26 @@
 
   <!-- Jekyll SEO tag -->
   {% seo %}
-
+{% if page.video %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "{{ page.video.name | escape }}",
+  "description": "{{ page.video.description | escape }}",
+  "thumbnailUrl": "{{ page.video.thumbnailUrl | absolute_url }}",
+  "contentUrl": "{{ page.video.contentUrl | absolute_url }}",
+  "uploadDate": "{{ page.video.uploadDate }}",
+  "datePublished": "{{ page.video.datePublished }}",
+  "duration": "{{ page.video.duration }}",
+  "potentialAction": {
+    "@type": "SeekToAction",
+    "target": "?start={seek_to_second_number}",
+    "startOffset-input": "required name=seek_to_second_number"
+  }
+}
+</script>
+{% endif %}
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="{{ page.title | default: site.name | escape }}" />
   <meta property="og:description" content="{{ page.description | default: page.excerpt | default: site.description | escape }}" />
