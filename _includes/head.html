@@ -3,21 +3,51 @@
 
   {% include meta.html %}
 
+  <!-- Meta Tags untuk SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.excerpt | escape }}">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="{{ page.title | escape }}" />
+  <meta property="og:description" content="{{ page.excerpt | escape }}" />
+  <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
+  <meta property="og:type" content="website" />
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image | prepend: site.url }}" />
+  {% else %}
+  <meta property="og:image" content="{{ site.url }}/path/to/default-image.jpg" />
+  {% endif %}
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | escape }}">
+  <meta name="twitter:description" content="{{ page.excerpt | escape }}">
+  {% if page.image %}
+  <meta name="twitter:image" content="{{ page.image | prepend: site.url }}">
+  {% else %}
+  <meta name="twitter:image" content="{{ site.url }}/path/to/default-image.jpg">
+  {% endif %}
+
+  <!-- HTML5 shim for IE < 9 -->
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/atom.xml" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/atom.xml">
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
-  <link rel="canonical" href="{{site.baseurl}}" />
-
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/share.min.css">
-  <script src="{{site.baseurl}}/assets/js/social-share.min.js"></script>
 
-<script src="{{site.baseurl}}/assets/js/pangu.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/countdown.js"></script>
-  
+  <!-- Scripts -->
+  <script src="{{site.baseurl}}/assets/js/social-share.min.js"></script>
+  <script src="{{site.baseurl}}/assets/js/pangu.min.js"></script>
+  <script src="{{site.baseurl}}/assets/js/countdown.js"></script>
 
   <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 </head>
