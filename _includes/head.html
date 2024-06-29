@@ -1,20 +1,21 @@
 <head>
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-  {% include meta.html %}
-
   <!-- Meta Tags untuk SEO -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ page.excerpt | escape }}">
+  <meta name="description" content="{{ page.excerpt | default: site.description | escape }}">
   <meta name="keywords" content="keyword1, keyword2, keyword3">
-  <meta name="author" content="{{ site.author }}">
+  <meta name="author" content="{{ site.author | default: 'Postzo Store' }}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="{{ page.url | prepend: site.url }}">
 
+  <!-- Jekyll SEO tag -->
+  {% seo %}
+  
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="{{ page.title | escape }}" />
-  <meta property="og:description" content="{{ page.excerpt | escape }}" />
+  <meta property="og:title" content="{{ page.title | default: site.name | escape }}" />
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | escape }}" />
   <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
   <meta property="og:type" content="website" />
   {% if page.image %}
@@ -25,8 +26,8 @@
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ page.title | escape }}">
-  <meta name="twitter:description" content="{{ page.excerpt | escape }}">
+  <meta name="twitter:title" content="{{ page.title | default: site.name | escape }}">
+  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | escape }}">
   {% if page.image %}
   <meta name="twitter:image" content="{{ page.image | prepend: site.url }}">
   {% else %}
