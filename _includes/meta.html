@@ -18,7 +18,7 @@
   "name": "{{ page.video.name | escape }}",
   "description": "{{ page.video.description | escape }}",
   "thumbnailUrl": "{{ page.video.thumbnailUrl | absolute_url }}",
-  "contentUrl": "{{ page.video.contentUrl | absolute_url }}",
+  "contentUrl": "{% if page.video.contentUrl %}{{ page.video.contentUrl | absolute_url }}{% else %}{% endif %}",
   "uploadDate": "{{ page.video.uploadDate }}",
   "datePublished": "{{ page.video.datePublished }}",
   "duration": "{{ page.video.duration }}",
