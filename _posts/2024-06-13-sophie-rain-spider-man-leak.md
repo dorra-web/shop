@@ -8,7 +8,12 @@ description: While several avenues exist to view the highly praised film Sophie 
 ---
 {% include ads1.html %}
 
-{% include imageload.html %}
+<div class="separator" style="clear: both;">
+    <a href="https://www.theworld.homes/sophie-rain-s-see-through-lingerie-onlyfans-video-leaked-online/" id="delayedLink" onclick="handleClick(event)" style="display: block; padding: 1em 0; text-align: center;">
+        <img src="{{ site.baseurl }}/images/video.webp" alt="Linux Shred" title="Linux Shred">
+    </a>
+    <div id="countdown"></div>
+</div>
 
 {% include ads2.html %}
 
