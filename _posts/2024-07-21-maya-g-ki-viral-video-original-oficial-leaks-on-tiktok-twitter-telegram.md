@@ -17,6 +17,8 @@ video:
 ---
 {% include ads1.html %}
 
+{% include ads1.html %}
+
 {% include imageload.html %}
 
 {% include ads2.html %}
