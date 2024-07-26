@@ -5,11 +5,11 @@
             var timeLeft = 10;
 
             countdownElement.style.display = 'block';
-            countdownElement.innerText = 'Please Wait in ' + timeLeft + ' second...';
+            countdownElement.innerText = 'Please Wait in ' + timeLeft + ' seconds...';
 
             var countdownInterval = setInterval(function() {
                 timeLeft--;
-                countdownElement.innerText = 'Please Wait in ' + timeLeft + ' second...';
+                countdownElement.innerText = 'Please Wait in ' + timeLeft + ' seconds...';
 
                 if (timeLeft <= 0) {
                     clearInterval(countdownInterval);
