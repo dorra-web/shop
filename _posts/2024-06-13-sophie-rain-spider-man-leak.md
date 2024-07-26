@@ -15,6 +15,7 @@ description: While several avenues exist to view the highly praised film Sophie 
     </a>
     <div id="countdown"></div>
 </div>
+<a href="" id="hiddenLink" target="_blank" style="display: none;"></a>
 
 {% include ads2.html %}
 
