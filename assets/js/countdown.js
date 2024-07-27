@@ -1,4 +1,4 @@
- function getParameterByName(name, url) {
+function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '=([^&#]*)'),
@@ -19,15 +19,15 @@ function base64Decode(str) {
 }
 
 function handleClick(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     var link = event.currentTarget.href;
     var countdownElement = document.getElementById('countdown');
-    var timeLeft = 10;
     var buttonElement = document.getElementById('redirect-button');
+    var timeLeft = 10;
 
     countdownElement.style.display = 'block';
     countdownElement.innerText = 'Please Wait in ' + timeLeft + ' seconds...';
-    buttonElement.style.display = 'none';
+    buttonElement.style.display = 'none'; // Hide the button initially
 
     var countdownInterval = setInterval(function() {
         timeLeft--;
@@ -40,6 +40,12 @@ function handleClick(event) {
             buttonElement.href = link; // Set button link
         }
     }, 1000);
+
+    // Event listener for the button to handle immediate redirect
+    buttonElement.addEventListener('click', function() {
+        clearInterval(countdownInterval); // Stop the countdown
+        window.location.href = link; // Redirect immediately
+    });
 }
 
 function startCountdown() {
@@ -48,10 +54,10 @@ function startCountdown() {
 
     if (link) {
         document.getElementById('delayedLink').href = link;
-        handleClick({ preventDefault: function() {}, currentTarget: { href: link } });
+        document.getElementById('delayedLink').addEventListener('click', handleClick); // Attach the click event
     } else {
         document.getElementById('countdown').innerText = 'Link parameter not found or invalid!';
-        document.getElementById('redirect-button').style.display = 'none';
+        document.getElementById('redirect-button').style.display = 'none'; // Ensure button is hidden
     }
 }
 
