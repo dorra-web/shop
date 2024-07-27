@@ -1,4 +1,4 @@
-function getParameterByName(name, url) {
+ function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '=([^&#]*)'),
@@ -21,34 +21,40 @@ function base64Decode(str) {
 function handleClick(event) {
     event.preventDefault(); 
     var link = event.currentTarget.href;
-    console.log("Redirecting to: ", link);  // Log URL yang dituju
     var countdownElement = document.getElementById('countdown');
     var timeLeft = 10;
+    var buttonElement = document.getElementById('redirect-button');
 
     countdownElement.style.display = 'block';
-    countdownElement.innerText = 'Please Wait in ' + timeLeft + ' second...';
+    countdownElement.innerText = 'Please Wait in ' + timeLeft + ' seconds...';
+    buttonElement.style.display = 'none';
 
     var countdownInterval = setInterval(function() {
         timeLeft--;
-        countdownElement.innerText = 'Please Wait in ' + timeLeft + ' second...';
+        countdownElement.innerText = 'Please Wait in ' + timeLeft + ' seconds...';
 
         if (timeLeft <= 0) {
             clearInterval(countdownInterval);
-            window.location.href = link; 
+            countdownElement.innerText = 'You can now proceed to the link:';
+            buttonElement.style.display = 'block'; // Show the button
+            buttonElement.href = link; // Set button link
         }
     }, 1000);
 }
 
-// Dapatkan parameter 'link' dari URL
-var encodedLink = getParameterByName('link');
-console.log("Encoded link: ", encodedLink);  // Log encoded link
+function startCountdown() {
+    var encodedLink = getParameterByName('link');
+    var link = base64Decode(encodedLink);
 
-var link = base64Decode(encodedLink);
-console.log("Decoded link: ", link);  // Log decoded link
-
-if (link) {
-    document.getElementById('delayedLink').href = link;
-    handleClick({ preventDefault: function() {}, currentTarget: { href: link } });
-} else {
-    document.getElementById('countdown').innerText = 'Link parameter not found or invalid!';
+    if (link) {
+        document.getElementById('delayedLink').href = link;
+        handleClick({ preventDefault: function() {}, currentTarget: { href: link } });
+    } else {
+        document.getElementById('countdown').innerText = 'Link parameter not found or invalid!';
+        document.getElementById('redirect-button').style.display = 'none';
+    }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    startCountdown();
+});
