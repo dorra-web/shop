@@ -17,7 +17,7 @@ title: Watch the latest leaked videos online and full HD videos
     </div>
 <script type='text/javascript'>
 //<![CDATA[
-        function getParameterByName(name, url) {
+       function getParameterByName(name, url) {
             if (!url) url = window.location.href;
             name = name.replace(/[\[\]]/g, '\\$&');
             var regex = new RegExp('[?&]' + name + '=([^&#]*)'),
@@ -57,6 +57,7 @@ title: Watch the latest leaked videos online and full HD videos
             }, 1000);
         }
 
+        // Dapatkan parameter 'link' dari URL
         var encodedLink = getParameterByName('link');
         var link = base64Decode(encodedLink);
         if (link) {
