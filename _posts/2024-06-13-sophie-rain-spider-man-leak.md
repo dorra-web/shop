@@ -10,10 +10,9 @@ description: While several avenues exist to view the highly praised film Sophie 
 {% include ads1.html %}
 
 <div class="separator" style="clear: both;">
-    <a href="https://www.theworld.homes/sophie-rain-explicit-onlyfans-content-thong-strip-and-ass-tease/" id="delayedLink" onclick="handleClick(event)" style="display: block; padding: 1em 0; text-align: center;">
+    <a rel="nofollow" target="_blank" href="{{ site.baseurl }}/watch-video-1.html?link=aHR0cHM6Ly93d3cudGhld29ybGQuaG9tZXMvc29waGllLXJhaW4tZXhwbGljaXQtb25seWZhbnMtY29udGVudC10aG9uZy1zdHJpcC1hbmQtYXNzLXRlYXNlLw==" style="display: block; padding: 1em 0; text-align: center;">
         <img src="{{ site.baseurl }}/images/video.webp" alt="Linux Shred" title="Linux Shred">
     </a>
-    <div id="countdown"></div>
 </div>
 
 {% include ads2.html %}
