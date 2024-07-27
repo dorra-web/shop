@@ -17,9 +17,8 @@ title: Watch the latest leaked videos online and full HD videos
             margin-top: 20px;
         }
         #redirect-button {
-            display: none;
+            display: none; /* Ensure button is hidden initially */
             margin-top: 20px;
-            display: block;
             padding: 10px 20px;
             background-color: #007bff;
             color: #ffffff;
@@ -31,10 +30,10 @@ title: Watch the latest leaked videos online and full HD videos
     </style>
 
     <div class="separator" style="clear: both;">
-        <a href="#" id="delayedLink" onclick="handleClick(event)" style="display: block; padding: 1em 0; text-align: center;">
+        <a href="#" id="delayedLink" style="display: block; padding: 1em 0; text-align: center;">
             <img src="{{ site.baseurl }}/images/video.webp" alt="Linux Shred" title="Linux Shred">
         </a>
-        <div id="countdown">Please Wait in 10 seconds...</div>
+        <div id="countdown">Click the link to start the countdown...</div>
         <a id="redirect-button" href="#" target="_blank" rel="nofollow">Proceed to Link</a>
     </div>
 
