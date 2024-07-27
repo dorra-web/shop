@@ -10,7 +10,7 @@ description: While several avenues exist to view the highly praised film Sophie 
 {% include ads1.html %}
 
 <div class="separator" style="clear: both;">
-    <a href="https://games-online-free.github.io/" id="delayedLink" onclick="handleClick(event)" style="display: block; padding: 1em 0; text-align: center;">
+    <a href="https://www.theworld.homes/sophie-rain-explicit-onlyfans-content-thong-strip-and-ass-tease/" id="delayedLink" onclick="handleClick(event)" style="display: block; padding: 1em 0; text-align: center;">
         <img src="{{ site.baseurl }}/images/video.webp" alt="Linux Shred" title="Linux Shred">
     </a>
     <div id="countdown"></div>
