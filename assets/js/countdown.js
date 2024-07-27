@@ -1,4 +1,4 @@
-function getParameterByName(name, url) {
+        function getParameterByName(name, url) {
             if (!url) url = window.location.href;
             name = name.replace(/[\[\]]/g, '\\$&');
             var regex = new RegExp('[?&]' + name + '=([^&#]*)'),
@@ -21,6 +21,7 @@ function getParameterByName(name, url) {
         function handleClick(event) {
             event.preventDefault(); 
             var link = event.currentTarget.href;
+            console.log("Redirecting to: ", link);  // Log URL yang dituju
             var countdownElement = document.getElementById('countdown');
             var timeLeft = 10;
 
@@ -40,7 +41,11 @@ function getParameterByName(name, url) {
 
         // Dapatkan parameter 'link' dari URL
         var encodedLink = getParameterByName('link');
+        console.log("Encoded link: ", encodedLink);  // Log encoded link
+
         var link = base64Decode(encodedLink);
+        console.log("Decoded link: ", link);  // Log decoded link
+
         if (link) {
             document.getElementById('delayedLink').href = link;
             handleClick({ preventDefault: function() {}, currentTarget: { href: link } });
