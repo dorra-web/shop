@@ -37,6 +37,18 @@ title: Leaked Video
         <a id="redirect-button" href="#" target="_blank" rel="nofollow">Proceed to Link</a>
     </div>
 
+    <script>
+        function getParameter() {
+            const urlParams = window.location.search.substring(1); // Get the substring after '?'
+            return urlParams ? urlParams : 'Parameter not found';
+        }
+
+        function displayParameter() {
+            const paramValue = getParameter();
+            document.getElementById('param-value').textContent = paramValue;
+        }
+    </script>
+
 {% include ads2.html %}
 
 {% include ads1.html %}
